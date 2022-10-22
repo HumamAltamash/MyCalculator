@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txt;
     double num=0;
     int dec=0,op=0,ind=0;
+    boolean equalPressed=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
         b1=(Button)findViewById(R.id.b1);
         b1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -34,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         b2=(Button)findViewById(R.id.b2);
         b2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -46,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
         b3=(Button)findViewById(R.id.b3);
         b3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -58,6 +77,12 @@ public class MainActivity extends AppCompatActivity {
         b4=(Button)findViewById(R.id.b4);
         b4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -70,6 +95,12 @@ public class MainActivity extends AppCompatActivity {
         b5=(Button)findViewById(R.id.b5);
         b5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -82,6 +113,12 @@ public class MainActivity extends AppCompatActivity {
         b6=(Button)findViewById(R.id.b6);
         b6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -94,6 +131,12 @@ public class MainActivity extends AppCompatActivity {
         b7=(Button)findViewById(R.id.b7);
         b7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -106,6 +149,12 @@ public class MainActivity extends AppCompatActivity {
         b8=(Button)findViewById(R.id.b8);
         b8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -118,6 +167,12 @@ public class MainActivity extends AppCompatActivity {
         b9=(Button)findViewById(R.id.b9);
         b9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -130,6 +185,12 @@ public class MainActivity extends AppCompatActivity {
         b0=(Button)findViewById(R.id.b0);
         b0.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
@@ -142,6 +203,12 @@ public class MainActivity extends AppCompatActivity {
         bx=(Button)findViewById(R.id.bx);
         bx.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 String x=(String)txt.getText();
                 int l=x.length();
                 if(l==0) {
@@ -164,6 +231,12 @@ public class MainActivity extends AppCompatActivity {
         bp=(Button)findViewById(R.id.bp);
         bp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if("".equals(txt.getText()+"")||"-".equals(txt.getText()+""))
                 {}
                 else {
@@ -184,6 +257,12 @@ public class MainActivity extends AppCompatActivity {
         bs=(Button)findViewById(R.id.bs);
         bs.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(("".equals(txt.getText()+""))||ind==1)
                 {
                     txt.setText("-");
@@ -211,6 +290,12 @@ public class MainActivity extends AppCompatActivity {
         bm=(Button)findViewById(R.id.bm);
         bm.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if("".equals(txt.getText()+"")||"-".equals(txt.getText()+""))
                 {}
                 else {
@@ -227,6 +312,7 @@ public class MainActivity extends AppCompatActivity {
                     op = 3;
                     ind = 1;
                 }
+
             }
         });
 
@@ -234,6 +320,12 @@ public class MainActivity extends AppCompatActivity {
         bd=(Button)findViewById(R.id.bd);
         bd.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if("".equals(txt.getText()+"")||"-".equals(txt.getText()+""))
                 {}
                 else {
@@ -253,12 +345,14 @@ public class MainActivity extends AppCompatActivity {
                     op = 4;
                     ind = 1;
                 }
+
             }
         });
 
         beq=(Button)findViewById(R.id.beq);
         beq.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                equalPressed=true;
                 if("".equals(txt.getText()+"")||"-".equals(txt.getText()+""))
                 {}
                 else {
@@ -306,6 +400,12 @@ public class MainActivity extends AppCompatActivity {
         b_=(Button)findViewById(R.id.b_);
         b_.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                if(equalPressed) {
+                    txt.setText("");
+                    num=0;
+                    dec=0;op=0;
+                    equalPressed=false;
+                }
                 if(ind==1) {
                     txt.setText("");
                     ind=0;
